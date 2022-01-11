@@ -2,7 +2,7 @@
 
 ## Purpose
 
-// Purpose will go here
+// Purpose will go here...
 
 ## Table of Contents
 - [Built With](#built-with)

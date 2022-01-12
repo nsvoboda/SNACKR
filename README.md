@@ -48,6 +48,6 @@ Edited by Amari, Sara, Jose, Robert, and Nate
 
 ## License
 
-&copy; 2021 The SNACKR Crew
+&copy; 2022 The SNACKR Crew
 
 Licensed under the [BSD 2-Clause](LICENSE.txt)

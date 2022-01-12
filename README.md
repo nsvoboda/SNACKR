@@ -17,19 +17,23 @@
 * HTML
 * CSS
 * JavaScript
-WHAT OTHER THINGS
+* Font Awesome 4 (https://fontawesome.com/v4.7/)
+* Pure.css (https://purecss.io/)
+* Materialize.css (https://materializecss.com/)
+* Day.js (https://day.js.org/en/)
+* Luxon.js (https://moment.github.io/luxon/api-docs/index.html)
 
 ## Website
 
-INSERT WEBSITE URL
+https://nsvoboda.github.io/SNACKR/
 
 ### Installation
 
 It is best practice to directly clone the respository by using the following code in your Terminal/Command Line:
 
-git clone INSERT GIT CLONE URL/PATH
+git clone git@github.com:nsvoboda/SNACKR.git
 
-You can also download the files into a .zip directly from the GitHub repository.
+You can also download the files into a .zip directly from the GitHub repository: https://github.com/nsvoboda/SNACKR
 
 ### Usage
 

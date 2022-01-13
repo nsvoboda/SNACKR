@@ -15,3 +15,16 @@ var callSpoon = function(){
 
 callSpoon();
 
+var calNinjaApiKey = "Iw3ZtNjvrK7wCyRgvYbpFw==qquboZqs73LhMruk"
+var calNinjaApiUrl = "https://api.calorieninjas.com/v1/nutrition?query="
+
+var callCalNinja = function(){
+    fetch(calNinjaApiUrl).then(function(response){
+        console.log(response);
+        if (response.ok){
+            response.json().then(function(data){
+                console.log(data);
+            })
+        }
+    });
+}

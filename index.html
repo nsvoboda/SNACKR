@@ -4,21 +4,53 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    
-    <!-- Materialize.css link tag -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css" integrity="sha512-UJfAaOlIRtdR+0P6C3KUoTDAxVTuy3lnSXLyLKlHYJlcSU8Juge/mjeaxDNMlw9LgeIotgz5FP8eUQPhX1q10A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
-   
-    <!-- Pure.css link tag -->
-    <link rel="stylesheet" href="https://unpkg.com/purecss@2.0.6/build/pure-min.css" integrity="sha384-Uu6IeWbM+gzNVXJcM9XV3SohHtmWE+3VGi496jvgX1jyvDTXfdK+rfZc8C1Aehk5" crossorigin="anonymous">
 
     <!-- Font Awesome link tag -->
     <script src="https://use.fontawesome.com/cfc80dcb24.js"></script>
+
+    <!-- Foundation.css Stylesheet link tag -->
+    <link rel="stylesheet" href="http://dhbhdrzi4tiry.cloudfront.net/cdn/sites/foundation.min.css">
 
     <!-- Our custom sytle sheet link tag -->
     <link rel="stylesheet" href="./assets/css/style.css">
     <title>SNACKR</title>
 </head>
 <body>
+
+    <!-- Begin header bar section -->
+    <section class="header-bar">
+        <div class="top-bar">
+            <div class="top-bar-left">
+                <h1 class="">SNACKR</h1>
+            </div>
+            <div class="top-bar-right">
+                <a href="/index.html"><button type="button" class="alert button">Clear Week!</button></a>
+            </div>
+        </div>
+    </section>
+    <!-- Header bar section end -->
+
+
+    <!-- Form section with user input for ingredient -->
+    <section>
+        <div class="callout large">
+            <div class="row column text-center">
+                <h1>Helping you live a healthier life!</h1>
+                <p class="lead">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam in dui mauris.</p>
+            </div>
+
+            <form>
+                <div class="grid-x grid-padding-x align-spaced">
+                    <div class="cell small-5">
+                        <label>Please enter a recipe ingredient (or multiple separated by ',')</label>
+                            <input type="text" placeholder="Ingredient...">
+                        <button type="button" class="button radius">Search for recipes!</button>
+                    </div>
+                </div>
+            </form>
+        </div>
+    </section>
+    <!-- End user ingredient search form -->
     
 
     <!-- Other API tags will go below -->

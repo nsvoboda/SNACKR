@@ -8,30 +8,31 @@
     <!-- Font Awesome link tag -->
     <script src="https://use.fontawesome.com/cfc80dcb24.js"></script>
 
-    <!-- Foundation.css Stylesheet link tag -->
+    <!-- Foundation.css Stylesheet link tags -->
     <link rel="stylesheet" href="http://dhbhdrzi4tiry.cloudfront.net/cdn/sites/foundation.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/foundation-sites@6.7.4/dist/css/foundation-float.min.css" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/foundation-sites@6.7.4/dist/css/foundation-prototype.min.css" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/foundation-sites@6.7.4/dist/css/foundation-rtl.min.css" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/foundation-sites@6.7.4/dist/css/foundation.min.css" crossorigin="anonymous">
 
+    <!-- Foundation script tags -->
+    <script src="https://cdn.jsdelivr.net/npm/foundation-sites@6.7.4/dist/js/foundation.min.js" crossorigin="anonymous"></script>
     <!-- Our custom sytle sheet link tag -->
     <link rel="stylesheet" href="./assets/css/style.css">
     <title>SNACKR</title>
 </head>
 <body>
-<<<<<<< HEAD
     
     
-=======
 
     <!-- Begin header bar section -->
-    <section class="header-bar">
+    <nav class="header-bar">
         <div class="top-bar">
-            <div class="top-bar-left">
+            <div class="top-bar-center">
                 <h1 class="">SNACKR</h1>
             </div>
-            <div class="top-bar-right">
-                <a href="/index.html"><button type="button" class="alert button">Clear Week!</button></a>
-            </div>
         </div>
-    </section>
+      </nav>
     <!-- Header bar section end -->
 
 
@@ -40,52 +41,76 @@
         <div class="callout large">
             <div class="row column text-center">
                 <h1>Helping you live a healthier life!</h1>
-                <p class="lead">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam in dui mauris.</p>
             </div>
 
             <form>
                 <div class="grid-x grid-padding-x align-spaced">
                     <div class="cell small-5">
                         <label>Please enter a recipe ingredient (or multiple separated by ',')</label>
-                            <input type="text" placeholder="Ingredient...">
-                        <button type="button" class="button radius">Search for recipes!</button>
+                        <div class="grid-y">
+                          <input type="text" placeholder="Ingredient...">
+                          <button type="button" class="button radius">Search for recipes!</button>
+                        </div>
                     </div>
                 </div>
             </form>
         </div>
     </section>
     <!-- End user ingredient search form -->
-    <div class="row">
-        <div class="">
-          <h3>Sunday</h3>
-          <p></p>
+    <div class="grid-x grid-padding-x align-top">
+      <div class="card" id="card-custom">
+        <h4 class="card-divider align-center">Sunday</h4>
+        <div class="card-section" id="card-section-custom">
+          <h4>Drag Ingredient Here</h4>
         </div>
-        <div class="">
-          <h3>Monday</h3>
-          <p></p>
+      </div>
+
+      <div class="card" id="card-custom">
+        <h4 class="card-divider align-center">Monday</h4>
+        <div class="card-section" id="card-section-custom">
+          <h4>Drag Ingredient Here</h4>
         </div>
-        <div class="">
-          <h3>Tuesday</h3>
-          <p></p>
+      </div>
+
+        <div class="card" id="card-custom">
+          <h4 class="card-divider align-center">Tuesday</h4>
+          <div class="card-section" id="card-section-custom">
+            <h4>Drag Ingredient Here</h4>
+          </div>
         </div>
-        <div class="">
-          <h3>Wendesday</h3>
-          <p></p>
+      
+        <div class="card" id="card-custom">
+          <h4 class="card-divider align-center">Wendesday</h4>
+          <div class="card-section" id="card-section-custom">
+            <h4>Drag Ingredient Here</h4>
+          </div>
         </div>
-        <div class="">
-          <h3>Thursday</h3>
-          <p></p>
+
+        <div class="card" id="card-custom">
+          <h4 class="card-divider align-center">Thursday</h4>
+          <div class="card-section" id="card-section-custom">
+            <h4>Drag Ingredient Here</h4>
+          </div>
         </div>
-        <div class="">
-          <h3>Friday</h3>
-          <p></p>
+
+        <div class="card" id="card-custom">
+          <h4 class="card-divider align-center">Friday</h4>
+          <div class="card-section" id="card-section-custom">
+            <h4>Drag Ingredient Here</h4>
+          </div>
         </div>
-        <div class="">
-          <h3>Saturday</h3>
-          <p></p>
+
+        <div class="card" id="card-custom">
+          <h4 class="card-divider align-center">Saturday</h4>
+          <div class="card-section" id="card-section-custom">
+            <h4>Drag Ingredient Here</h4>
+          </div>
         </div>
+        <div class="grid-x align-center" id="button-center-custom">
+          <button type="button" class="alert button" id="button-custom">Clear Week!</button>
         </div>
->>>>>>> develop
+        
+    </div>
 
     <!-- Other API tags will go below -->
     

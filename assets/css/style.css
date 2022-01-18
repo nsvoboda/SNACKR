@@ -13,3 +13,28 @@ a:hover{
 a:active{
     text-decoration: none;
 }
+
+#card-custom {
+    width: 14%;
+}
+#card-section-custom {
+    min-height: 200px;
+}
+#button-center-custom{
+    width: 100%
+}
+#button-custom{
+    width: 14%;
+}
+
+@media only screen and (max-width:600px) {
+    #card-custom{
+        width: 100%;
+    }
+    #card-section-custom {
+        min-height: 100px;
+    }
+    #button-custom{
+        width: 100%;
+    }
+}

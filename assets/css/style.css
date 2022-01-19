@@ -1,16 +1,4 @@
-a:link {
-    text-decoration: none;
-}
-
-a:visited{
-    text-decoration: none;
-}
-
-a:hover{
-    text-decoration: none;
-}
-
-a:active{
+a {
     text-decoration: none;
 }
 
@@ -25,6 +13,19 @@ a:active{
 }
 #button-custom{
     width: 14%;
+}
+
+#main-page-section{
+    background-image: url("../images/healthy-food-background.jpeg");
+    background-position:center;
+    background-size: cover;
+    opacity: .8;
+    color: white;
+    font-size: medium;
+}
+
+label {
+    color: white;
 }
 
 @media only screen and (max-width:600px) {

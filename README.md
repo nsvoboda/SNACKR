@@ -39,7 +39,7 @@ You can also download the files into a .zip directly from the GitHub repository:
 
 // What is the usage
 
-![screenshot of the site's hero section](./Assets/Screenshots/IMG FILE HERE)
+![screenshot of the site's hero section](./assets/images/empty-main-screen.png)
 
 ![screenshot of the site's main content section](./Assets/Screenshots/IMG FILE HERE)
 

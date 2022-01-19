@@ -27,6 +27,9 @@ a {
 label {
     color: white;
 }
+.label{
+    text-align: center;
+}
 
 @media only screen and (max-width:600px) {
     #card-custom{

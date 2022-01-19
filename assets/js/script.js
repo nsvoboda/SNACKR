@@ -19,3 +19,16 @@ var fetchSpoonData = function(){
 
 fetchSpoonData();
 
+// Rob's magic formula
+
+// var bodyFat = getElementById('body-fat').value;
+// var bodyFatCals = bodyFat x 3500;
+// var goalFatCals = goalFat x 3500;
+// var maxDeficit = bodyFat x 31;
+// var goalFat = getElementById('goal-weight').value;
+// daysUntil = 0;
+// while(bodyFatCals > goalFatCals) {
+//    bodyFatCals = bodyFatCals - maxDeficit;
+//    daysUntil++;
+// };
+// document.getElementId('days-until').value = daysUntil.value;

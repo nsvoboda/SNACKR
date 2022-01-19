@@ -5,8 +5,7 @@ $(function () {
     // Spoonacular API Key
     var spoonApiKey = "4eb1b45b7edb4a658a39c27390eaebe2"
     // Spoonacular URL with the variables holding the key and user input appened
-   // var spoonApiUrl = `https://api.spoonacular.com/recipes/findByIngredients?apiKey=spoonApiKey+"&ingredients="+ TEST_ONLY_VAR +"&number=5"`
-    
+   
    var ingredients = $('#ingredient-search').val();
 
     var fetchSpoonData = function (ingredients) {
@@ -20,11 +19,19 @@ $(function () {
         });
     }
 
+    
+
+    var displayResults = function(recipeResults) {
+        recipeResults.title
+        recipeResults.image
+    }
+
     $("#burritos").on("click", function(event){
         event.preventDefault();
         //grab the text
         var searchText = $("#ingredient-search").val().trim();
         fetchSpoonData(searchText);
+        displayResults()
     })
 
 

@@ -15,8 +15,17 @@ a {
     width: 14%;
 }
 
-.main-page-section{
-    background-image: url(".assets/images/healthy-food-background.jpeg");
+#main-page-section{
+    background-image: url("../images/healthy-food-background.jpeg");
+    background-position:center;
+    background-size: cover;
+    opacity: .8;
+    color: white;
+    font-size: medium;
+}
+
+label {
+    color: white;
 }
 
 @media only screen and (max-width:600px) {

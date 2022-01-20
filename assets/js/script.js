@@ -13,20 +13,29 @@ $(function () {
 
         fetch(spoonApiUrl)
             .then(data => data.json())
-            .then(data => showSearchHistory(data));
-    }
+            .then(data => { 
+                console.log(data);
+                recipeResults(data);
+            });
 
+    //shows a list of the search history
     var showSearchHistory = function (recipeResults) {
-        var recipeList = "";
+        var historyList = "";
         for (var i = 0; i > recipeResults.length; i++) {
-            recipeList = `<li> ${recipeResults[i]} </li>`
+            historyList = `<li> ${recipeResults[i]} </li>`
+        }
+        ingredients.innerHTML = historyList;
+    };
+
+
+    //displays the results of the recipe search
+    var displayResults = function(recipeResults) {
+        var recipeList = ""
+        for (var i = 0; i > recipeResults.length; i++) {
+            recipeList = `<li> ${recipeResults[i].title} </li>`
         }
         ingredients.innerHTML = recipeList;
     };
-
-    var displayResults = function(recipeResults) {
-        recipeResults.title
-        recipeResults.image
 
     $("#burritos").on("click", function(event){
         event.preventDefault();
@@ -34,11 +43,11 @@ $(function () {
         var searchText = $("#ingredient-search").val().trim();
         fetchSpoonData(searchText);
         showSearchHistory();
-    })
+    });
+
+    fetchSpoonData(recipeResults);
 
 
 
 
-
-
-});
+};

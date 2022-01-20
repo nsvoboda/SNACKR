@@ -4,22 +4,128 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    
-    <!-- Materialize.css link tag -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css" integrity="sha512-UJfAaOlIRtdR+0P6C3KUoTDAxVTuy3lnSXLyLKlHYJlcSU8Juge/mjeaxDNMlw9LgeIotgz5FP8eUQPhX1q10A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
-   
-    <!-- Pure.css link tag -->
-    <link rel="stylesheet" href="https://unpkg.com/purecss@2.0.6/build/pure-min.css" integrity="sha384-Uu6IeWbM+gzNVXJcM9XV3SohHtmWE+3VGi496jvgX1jyvDTXfdK+rfZc8C1Aehk5" crossorigin="anonymous">
 
     <!-- Font Awesome link tag -->
     <script src="https://use.fontawesome.com/cfc80dcb24.js"></script>
 
+    <!-- Foundation.css Stylesheet link tags -->
+    <link rel="stylesheet" href="http://dhbhdrzi4tiry.cloudfront.net/cdn/sites/foundation.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/foundation-sites@6.7.4/dist/css/foundation-float.min.css" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/foundation-sites@6.7.4/dist/css/foundation-prototype.min.css" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/foundation-sites@6.7.4/dist/css/foundation-rtl.min.css" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/foundation-sites@6.7.4/dist/css/foundation.min.css" crossorigin="anonymous">
+
+    <!-- Foundation script tags -->
+    <script src="https://cdn.jsdelivr.net/npm/foundation-sites@6.7.4/dist/js/foundation.min.js" crossorigin="anonymous"></script>
     <!-- Our custom sytle sheet link tag -->
     <link rel="stylesheet" href="./assets/css/style.css">
     <title>SNACKR</title>
+    <link rel="shortcut icon" href="./assets/images/favicon.ico" type="image/x-icon">
 </head>
 <body>
     
+    
+
+    <!-- Begin header bar section -->
+    <nav class="header-bar">
+        <div class="header top-bar">
+            <div class="top-bar-center">
+                <h1 class="">SNACKR</h1>
+            </div>
+        </div>
+      </nav>
+    <!-- Header bar section end -->
+
+
+    <!-- Form section with user input for ingredient -->
+    <section>
+        <div id="main-page-section" class="callout large">
+            <div class="row column text-center">
+                <h1>Helping you live a healthier life!</h1>
+            </div>
+
+            <form>
+                <div class="grid-x grid-padding-x align-spaced">
+                    <div class="cell small-4">
+                        <label>Please enter one or more ingredients (separate multiples with a comma)</label>
+                        <div class="grid-y">
+                          <form>
+                            <input type="text" placeholder="Recipe..." id="ingredient-search">
+                            <input type="submit" id="burritos" class="button radius" value="Search for recipes!">
+                          </form>
+                          </div>
+                    </div>
+                </div>
+            </form>
+        </div>
+    </section>
+    <!-- Results section -->
+    <div id="search-results-section">
+
+    </div>
+
+    <!-- End user Recipe search form -->
+    <div class="grid-x grid-padding-x align-top">
+      <div class="card" id="card-custom">
+        <h4 class="card-divider align-center">Sunday</h4>
+        <p class="card-section align-center label secondary">Calories: <span id="sunday-counter">0</span>/2000</p>
+        <div class="card-section" id="card-section-custom">
+          <h4>Drag Recipe Here</h4>
+        </div>
+      </div>
+
+      <div class="card" id="card-custom">
+        <h4 class="card-divider align-center">Monday</h4>
+        <p class="card-section align-center label secondary">Calories: <span id="monday-counter">0</span>/2000</p>
+        <div class="card-section" id="card-section-custom">
+          <h4>Drag Recipe Here</h4>
+        </div>
+      </div>
+
+        <div class="card" id="card-custom">
+          <h4 class="card-divider align-center">Tuesday</h4>
+          <p class="card-section align-center label secondary">Calories: <span id="tuesday-counter">0</span>/2000</p>
+          <div class="card-section" id="card-section-custom">
+            <h4>Drag Recipe Here</h4>
+          </div>
+        </div>
+      
+        <div class="card" id="card-custom">
+          <h4 class="card-divider align-center">Wendesday</h4>
+          <p class="card-section align-center label secondary">Calories: <span id="wendesday-counter">0</span>/2000</p>
+          <div class="card-section" id="card-section-custom">
+            <h4>Drag Recipe Here</h4>
+          </div>
+        </div>
+
+        <div class="card" id="card-custom">
+          <h4 class="card-divider align-center">Thursday</h4>
+          <p class="card-section align-center label secondary">Calories: <span id="thursday-counter">0</span>/2000</p>
+          <div class="card-section" id="card-section-custom">
+            <h4>Drag Recipe Here</h4>
+          </div>
+        </div>
+
+        <div class="card" id="card-custom">
+          <h4 class="card-divider align-center">Friday</h4>
+          <p class="card-section align-center label secondary">Calories: <span id="firday-counter">0</span>/2000</p>
+          <div class="card-section" id="card-section-custom">
+            <h4>Drag Recipe Here</h4>
+          </div>
+        </div>
+
+        <div class="card" id="card-custom">
+          <h4 class="card-divider align-center">Saturday</h4>
+          <p class="card-section align-center label secondary">Calories: <span id="saturday-counter">0</span>/2000</p>
+          <div class="card-section" id="card-section-custom">
+            <h4>Drag Recipe Here</h4>
+          </div>
+        </div>
+        <div class="grid-x align-center" id="button-center-custom">
+          <button type="button" class="alert button" id="button-custom">Clear Week!</button>
+        </div>
+        
+    </div>
 
     <!-- Other API tags will go below -->
     
@@ -27,6 +133,7 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/dayjs/1.10.7/dayjs.min.js" integrity="sha512-bwD3VD/j6ypSSnyjuaURidZksoVx3L1RPvTkleC48SbHCZsemT3VKMD39KknPnH728LLXVMTisESIBOAb5/W0Q==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
     
     <!-- Luxon.js link tag -->
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/luxon/2.3.0/luxon.js" integrity="sha512-6ud/wSTQxyWxnOuqwexwe81173SXwAFxGwJVMteu6+gO79VTtJ0iFxy0YUHF2hOmmd4YrC2NPbXLozYFp4clWg==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
     <script src="./assets/js/script.js"></script>
 </body>

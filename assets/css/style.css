@@ -1,0 +1,49 @@
+.header{
+    background-color: white;
+}
+
+a {
+    text-decoration: none;
+}
+
+#card-custom {
+    width: 14%;
+}
+#card-section-custom {
+    min-height: 200px;
+}
+#button-center-custom{
+    width: 100%
+}
+#button-custom{
+    width: 14%;
+}
+
+#main-page-section{
+    background-image: url("../images/healthy-food-background.jpeg");
+    background-position:center;
+    background-size: cover;
+    opacity: .6;
+    color: white;
+    font-size: medium;
+    text-shadow: 100px;
+}
+
+label {
+    color:white;
+    text-shadow: 100px;
+    font-weight: bold;
+    text-align: center;
+}
+
+@media only screen and (max-width:600px) {
+    #card-custom{
+        width: 100%;
+    }
+    #card-section-custom {
+        min-height: 100px;
+    }
+    #button-custom{
+        width: 100%;
+    }
+}

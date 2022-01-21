@@ -5,17 +5,25 @@
 a {
     text-decoration: none;
 }
-
+.card-custom{
+    width: 9%;
+    min-height: 250px;
+}
+.draggable{
+    background-color: grey;
+    border: 1px black solid;
+    cursor: move;
+}
 #card-custom {
     width: 14%;
 }
-#card-section-custom {
+.card-section-custom {
     min-height: 200px;
 }
 #button-center-custom{
     width: 100%
 }
-#button-custom{
+.button-custom{
     width: 14%;
 }
 
@@ -34,6 +42,10 @@ label {
     text-shadow: 100px;
     font-weight: bold;
     text-align: center;
+}
+
+img {
+    max-width: 100px;
 }
 
 @media only screen and (max-width:600px) {

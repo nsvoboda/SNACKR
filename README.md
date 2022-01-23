@@ -2,7 +2,7 @@
 
 ## Purpose
 
-SNACKR allows you search for the particular foods that you enjoy from the grocery store as well as your favorite dishes from the restaurants you visit and easily keep track of the calories you consume throughout the week so that you can make more informed choices when it comes to your health.
+SNACKR allows you to search for the particular foods that you enjoy from the grocery store as well as your favorite dishes from the restaurants you visit and easily keep track of the calories you consume throughout the week so that you can make more informed choices when it comes to your health.
 
 ## Table of Contents
 - [Built With](#built-with)

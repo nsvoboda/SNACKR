@@ -8,6 +8,7 @@ $(function () {
     var spoonApiKey = "4eb1b45b7edb4a658a39c27390eaebe2"
     // Spoonacular URL with the variables holding the key and user input appened
 
+
     var fetchSpoonData = function (ingredients) {
         let spoonApiUrl = `https://api.spoonacular.com/recipes/findByIngredients?apiKey=${spoonApiKey}&ingredients=${ingredients}&metaInformation=true`
 
@@ -101,26 +102,6 @@ $(function () {
 
 
 
-<<<<<<< HEAD
-});
-
-fetchSpoonData();
-
-// Max daily deficit calculator
-
-// var bodyFat = document.getElementById('body-fat').value;
-// var bodyFatCals = bodyFat x 3500;
-// var goalFatCals = goalFat x 3500;
-// var maxDeficit = bodyFat x 31;
-// var goalFat = getElementById('goal-weight').value;
-// daysUntil = 0;
-
-// while(bodyFatCals > goalFatCals) {
-//    bodyFatCals = bodyFatCals - maxDeficit;
-//    daysUntil++;
-// };
-// document.getElementId('days-until').value = daysUntil.value;
-=======
     // event listener sets inputs to client storage
     $(saveBtnEl).on('click', function(){
         localStorage.setItem('sunday', $(item1).text());
@@ -143,4 +124,49 @@ fetchSpoonData();
         alert("Refresh the page for changes to reflect...")
     });
 });
->>>>>>> 44e9e335ff3f0cd68dc0f829a6309408e033ac3d
+
+// quote api 
+
+// $(function() {
+
+  //  const quoteEl = document.querySelector("#");
+
+    // var fetchQuote = function () {
+        // let quoteApiUrl = `https://zenquotes.io/api/[mode]`
+
+        // fetch(quoteApiUrl).then(function(response){
+            // console.log(response);
+            // response.json().then(function(data) {
+                // displayResults(data);
+            // })
+        // });
+    // }
+// });
+
+// quote api pre-made fetch call
+
+const api_url ="https://zenquotes.io/api/quotes/";
+
+async function getapi(url)
+{
+  const response = await fetch(url);
+  var data = await response.json();
+  console.log(data);
+}
+
+getapi(api_url);
+
+// Max daily deficit calculator
+
+// var bodyFat = document.getElementById('body-fat').value;
+// var bodyFatCals = bodyFat x 3500;
+// var goalFatCals = goalFat x 3500;
+// var maxDeficit = bodyFat x 31;
+// var goalFat = getElementById('goal-weight').value;
+// daysUntil = 0;
+
+// while(bodyFatCals > goalFatCals) {
+//    bodyFatCals = bodyFatCals - maxDeficit;
+//    daysUntil++;
+// };
+// document.getElementId('days-until').value = daysUntil.value;

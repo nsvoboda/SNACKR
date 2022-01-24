@@ -2,7 +2,7 @@
 
 ## Purpose
 
-SNACKR allows you search for the particular foods that you enjoy from the grocery store as well as your favorite dishes from the restaurants you visit and easily keep track of the calories you consume throughout the week so that you can make more informed choices when it comes to your health.
+SNACKR allows you to search for the particular foods that you enjoy from the grocery store as well as your favorite dishes from the restaurants you visit and easily keep track of the calories you consume throughout the week so that you can make more informed choices when it comes to your health.
 
 ## Table of Contents
 - [Built With](#built-with)
@@ -20,8 +20,7 @@ SNACKR allows you search for the particular foods that you enjoy from the grocer
 * Font Awesome 4 (https://fontawesome.com/v4.7/)
 * Pure.css (https://purecss.io/)
 * Materialize.css (https://materializecss.com/)
-* Day.js (https://day.js.org/en/)
-* Luxon.js (https://moment.github.io/luxon/api-docs/index.html)
+* Moment.js
 
 ## Website
 
@@ -41,10 +40,8 @@ You can also download the files into a .zip directly from the GitHub repository:
 
 ![screenshot of the site's hero section](./assets/images/empty-main-screen.png)
 
-![screenshot of the site's main content section](./Assets/Screenshots/IMG FILE HERE)
-
 ## Contribution
-Edited by Amari, Sara, Jose, Robert, and Nate
+Edited by Amari, Sara, Robert, and Nate
 
 ## License
 

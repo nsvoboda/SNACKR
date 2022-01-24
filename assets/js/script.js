@@ -5,8 +5,30 @@ $(function () {
     const saveBtnEl = document.querySelector("#save-btn");
     const clearBtnEl = document.querySelector("#clear-btn");
     // Spoonacular API Key
-    var spoonApiKey = "4eb1b45b7edb4a658a39c27390eaebe2"
-    // Spoonacular URL with the variables holding the key and user input appened
+    const spoonApiKey = "4eb1b45b7edb4a658a39c27390eaebe2";
+    const qouteApi = "https://zenquotes.io/api/quotes/";
+
+    getQouteApi();
+
+    function getQouteApi() {
+        fetch(qouteApi).then(function(response){
+            console.log(response);
+            response.json().then(function(data) {
+                console.log(data);
+                const randomNumber = Math.floor(Math.random() * 49);
+                var qoute = data[randomNumber]['q'];
+                var credit = data[randomNumber]['a'];
+
+                var qouteText = document.createElement("p");
+                var creditText = document.createElement("strong");
+
+                $('#quoteEl').append(qouteText);
+                $('#quoteEl').append(creditText);
+                $(qouteText).text(qoute + " Credit");
+                $(creditText).text(": "+ credit);
+            })
+        });
+    }
 
 
     var fetchSpoonData = function (ingredients) {
@@ -142,19 +164,6 @@ $(function () {
         // });
     // }
 // });
-
-// quote api pre-made fetch call
-
-const api_url ="https://zenquotes.io/api/quotes/";
-
-async function getapi(url)
-{
-  const response = await fetch(url);
-  var data = await response.json();
-  console.log(data);
-}
-
-getapi(api_url);
 
 // Max daily deficit calculator
 

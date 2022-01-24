@@ -75,10 +75,8 @@ $(function () {
         //grab the text
         var searchText = $(userInputEl).val().trim();
         fetchSpoonData(searchText);
-<<<<<<< HEAD
         showSearchHistory();
     });
-=======
     });
 
         // document elements below
@@ -154,7 +152,6 @@ $(function () {
     $(item6).text(localStorage.getItem('friday'));
     $(item7).text(localStorage.getItem('saturday'));
 
->>>>>>> 4b43809b2958237ec7c297f20ee57a91bd61c5b5
 
     fetchSpoonData(recipeResults);
 

@@ -6,7 +6,7 @@ $(function () {
     const clearBtnEl = document.querySelector("#clear-btn");
     // Spoonacular API Key
     const spoonApiKey = "4eb1b45b7edb4a658a39c27390eaebe2";
-    const qouteApi = "https://zenquotes.io/api/quotes/";
+    const qouteApi = "https://type.fit/api/quotes";
 
     getQouteApi();
 
@@ -37,13 +37,14 @@ $(function () {
     };
 
     function getQouteApi() {
-        fetch(qouteApi).then(function(response){
+        fetch(qouteApi) 
+            .then(function(response){
             console.log(response);
             response.json().then(function(data) {
                 console.log(data);
-                const randomNumber = Math.floor(Math.random() * 49);
-                var qoute = data[randomNumber]['q'];
-                var credit = data[randomNumber]['a'];
+                const randomNumber = Math.floor(Math.random() * data.length);
+                var qoute = data[randomNumber]['text'];
+                var credit = data[randomNumber]['author'];
 
                 var qouteText = document.createElement("p");
                 var creditText = document.createElement("strong");
@@ -53,6 +54,7 @@ $(function () {
                 $(qouteText).text(qoute + " Credit");
                 $(creditText).text(": "+ credit);
             })
+            
         });
     }
 

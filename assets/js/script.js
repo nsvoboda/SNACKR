@@ -10,32 +10,6 @@ $(function () {
 
     getQouteApi();
 
-        fetch(spoonApiUrl)
-            .then(data => data.json())
-            .then(data => { 
-                console.log(data);
-                recipeResults(data);
-            });
-
-    //shows a list of the search history
-    var showSearchHistory = function (recipeResults) {
-        var historyList = "";
-        for (var i = 0; i > recipeResults.length; i++) {
-            historyList = `<li> ${recipeResults[i]} </li>`
-        }
-        ingredients.innerHTML = historyList;
-    };
-
-
-    //displays the results of the recipe search
-    var displayResults = function(recipeResults) {
-        var recipeList = ""
-        for (var i = 0; i > recipeResults.length; i++) {
-            recipeList = `<li> ${recipeResults[i].title} </li>`
-        }
-        ingredients.innerHTML = recipeList;
-    };
-
     function getQouteApi() {
         fetch(qouteApi) 
             .then(function(response){
@@ -75,8 +49,6 @@ $(function () {
         //grab the text
         var searchText = $(userInputEl).val().trim();
         fetchSpoonData(searchText);
-        showSearchHistory();
-    });
     });
 
         // document elements below
@@ -153,7 +125,6 @@ $(function () {
     $(item7).text(localStorage.getItem('saturday'));
 
 
-    fetchSpoonData(recipeResults);
 
     // event listener sets inputs to client storage
     $(saveBtnEl).on('click', function(){

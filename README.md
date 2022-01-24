@@ -38,7 +38,7 @@ You can also download the files into a .zip directly from the GitHub repository:
 
 // What is the usage
 
-![screenshot of the site's hero section](./assets/images/empty-main-screen.png)
+![screenshot of the site's hero section](assets/images/screenshot.png)
 
 ## Contribution
 Edited by Amari, Sara, Robert, and Nate

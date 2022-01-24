@@ -15,8 +15,6 @@
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/foundation-sites@6.7.4/dist/css/foundation-rtl.min.css" crossorigin="anonymous">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/foundation-sites@6.7.4/dist/css/foundation.min.css" crossorigin="anonymous">
 
-    <!-- Foundation script tags -->
-    <script src="https://cdn.jsdelivr.net/npm/foundation-sites@6.7.4/dist/js/foundation.min.js" crossorigin="anonymous"></script>
     <!-- Our custom sytle sheet link tag -->
     <link rel="stylesheet" href="./assets/css/style.css">
     <title>SNACKR</title>
@@ -60,73 +58,69 @@
         </div>
     </section>
     <!-- Results section -->
-    <div id="search-results-section">
+    <div id="search-results-section" class="grid-x grid-padding-x align-top">
 
     </div>
-
     <!-- End user Recipe search form -->
     <div class="grid-x grid-padding-x align-top">
       <div class="card" id="card-custom">
         <h4 class="card-divider align-center">Sunday</h4>
-        <p class="card-section align-center label secondary">Calories: <span id="sunday-counter">0</span>/2000</p>
-        <div class="card-section" id="card-section-custom">
-          <h4>Drag Recipe Here</h4>
+        <p class="card-section align-center label secondary">Calories: <span id="sunday-counter">0</span>/2000<br>Drag recipe below</p>
+        <div class="card-section card-section-custom" id="day1">
         </div>
       </div>
 
       <div class="card" id="card-custom">
         <h4 class="card-divider align-center">Monday</h4>
-        <p class="card-section align-center label secondary">Calories: <span id="monday-counter">0</span>/2000</p>
-        <div class="card-section" id="card-section-custom">
-          <h4>Drag Recipe Here</h4>
+        <p class="card-section align-center label secondary">Calories: <span id="monday-counter">0</span>/2000<br>Drag recipe below</p>
+        <div class="card-section card-section-custom" id="day2">
         </div>
       </div>
 
         <div class="card" id="card-custom">
           <h4 class="card-divider align-center">Tuesday</h4>
-          <p class="card-section align-center label secondary">Calories: <span id="tuesday-counter">0</span>/2000</p>
-          <div class="card-section" id="card-section-custom">
-            <h4>Drag Recipe Here</h4>
+          <p class="card-section align-center label secondary">Calories: <span id="tuesday-counter">0</span>/2000<br>Drag recipe below</p>
+          <div class="card-section card-section-custom" id="day3">
           </div>
         </div>
       
         <div class="card" id="card-custom">
           <h4 class="card-divider align-center">Wendesday</h4>
-          <p class="card-section align-center label secondary">Calories: <span id="wendesday-counter">0</span>/2000</p>
-          <div class="card-section" id="card-section-custom">
-            <h4>Drag Recipe Here</h4>
+          <p class="card-section align-center label secondary">Calories: <span id="wendesday-counter">0</span>/2000<br>Drag recipe below</p>
+          <div class="card-section card-section-custom" id="day4">
           </div>
         </div>
 
         <div class="card" id="card-custom">
           <h4 class="card-divider align-center">Thursday</h4>
-          <p class="card-section align-center label secondary">Calories: <span id="thursday-counter">0</span>/2000</p>
-          <div class="card-section" id="card-section-custom">
-            <h4>Drag Recipe Here</h4>
+          <p class="card-section align-center label secondary">Calories: <span id="thursday-counter">0</span>/2000<br>Drag recipe below</p>
+          <div class="card-section card-section-custom" id="day5">
           </div>
         </div>
 
         <div class="card" id="card-custom">
           <h4 class="card-divider align-center">Friday</h4>
-          <p class="card-section align-center label secondary">Calories: <span id="firday-counter">0</span>/2000</p>
-          <div class="card-section" id="card-section-custom">
-            <h4>Drag Recipe Here</h4>
+          <p class="card-section align-center label secondary">Calories: <span id="firday-counter">0</span>/2000<br>Drag recipe below</p>
+          <div class="card-section card-section-custom" id="day6">
           </div>
         </div>
 
         <div class="card" id="card-custom">
           <h4 class="card-divider align-center">Saturday</h4>
-          <p class="card-section align-center label secondary">Calories: <span id="saturday-counter">0</span>/2000</p>
-          <div class="card-section" id="card-section-custom">
-            <h4>Drag Recipe Here</h4>
+          <p class="card-section align-center label secondary">Calories: <span id="saturday-counter">0</span>/2000<br>Drag recipe below</p>
+          <div class="card-section card-section-custom" id="day7">
           </div>
         </div>
         <div class="grid-x align-center" id="button-center-custom">
-          <button type="button" class="alert button" id="button-custom">Clear Week!</button>
+          <button type="button" class="submit success button button-custom" id="save-btn">Save</button>
+          <button type="button" class="alert button button-custom" id="clear-btn">Clear Week</button>
         </div>
         
     </div>
-
+    
+    <div class="grid-x align-center" id="quoteEl">
+      
+    </div>
     <!-- Other API tags will go below -->
     
     <!-- Day.js link tag -->
